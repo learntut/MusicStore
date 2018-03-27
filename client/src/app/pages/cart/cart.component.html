@@ -1,0 +1,66 @@
+<div class="row">
+    <div class="page-header">
+        <h4>Review your cart:</h4>
+      </div>
+    <div id="update-message">
+    </div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>
+                    Album Name
+                </th>
+                <th>
+                    Price (each)
+                </th>
+                <th>
+                    Quantity
+                </th>
+                <th>Total Price</th>
+                <th>
+                    <a href="#" class="btn btn-info">
+                        <span class="glyphicon glyphicon-check"></span> Checkout 
+                      </a>
+                </th>
+            </tr>
+        </thead>        
+        <tbody>
+            <tr id="row-@item.RecordId">
+                <td  class="col-md-6">
+                   Album
+                </td>
+                <td  class="col-md-2">
+                    Album.Price
+                </td>
+                <td  class="col-md-2">
+                    @item.Count
+                </td>
+                <td  class="col-md-2">item total</td>
+                <td  class="col-md-2">
+                    <a href="#" class="btn btn-danger">
+                        <span class="glyphicon glyphicon-trash"></span> Remove 
+                      </a>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    Total
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td id="cart-total">
+                    @Model.CartTotal
+                </td>
+                <td>
+                    <a href="#" class="btn btn-info">
+                        <span class="glyphicon glyphicon-check"></span> Check out 
+                      </a>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>

@@ -1,0 +1,14 @@
+{
+    "name": "musicstoreserver",
+    "main": "app.js",
+    "dependencies": {
+        "body-parser": "~1.0.1",
+        "cors": "^2.8.4",
+        "express": "~4.0.0",
+        "mssql": "^4.1.0",
+        "pg": "^7.4.1"
+    },
+    "scripts": {
+        "start": "node app.js"
+    }
+}
